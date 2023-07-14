@@ -1,10 +1,56 @@
+:root {
+  --text-color: #fff;
+  --background-transparent: rgba(0, 0, 0, 0.8)
+}
+
+html {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.active {
+  display: block 
+}
+.inactive {
+  display: none;  
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  color: var(--text-color)
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);   /* Ajusta el último valor para cambiar la opacidad */
+  z-index: -1;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
 #preloader {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #000000e0;
+  background-color: rgba(0, 0, 0, 0.878);
   z-index: 9999;
 }
 
@@ -18,22 +64,6 @@
   height: 60px;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-}
-
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);   /* Ajusta el último valor para cambiar la opacidad */
-  z-index: -1;
 }
 
 #background-images {
@@ -56,30 +86,38 @@ body::before {
   transition: opacity 2s ease-in-out;
 }
 
+/* ****** Header ******* */
+
 header {
   position: relative;
+  height: 70px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 25px;                            /* Aumenta el espacio del header */
+  justify-content: space-between;            /* Aumenta el espacio del header */
   background-color: rgba(0, 0, 0, 0.6);   /* Fondo difuminado */
-  margin: 0;
 }
 
 #logo {
-  width: 20%;
-  color: #fff;
+  width: 20%;  
+
   padding-left: 20px;
   cursor: pointer;
 }
 
-#menu {
-  width: 60%;
-  color: #fff;
+nav {
+  width: 60%;  
   position: relative;
+ 
 }
 
-#menu ul {
+.lista-menu {
+display: flex;
+align-items: center;
+justify-content: space-between;
+
+}
+
+nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
@@ -87,15 +125,16 @@ header {
   justify-content: space-evenly;
 }
 
-#menu li {
+nav ul li {
   position: relative;
   display: inline-block;
+  margin: 0 10px 0 0;
 }
 
-#menu a {
+nav a {
   display: block;
-  color: #fff;
   cursor: pointer;
+  font-size: 1rem
   text-decoration: none; /* Elimina el subrayado */
 }
 
@@ -144,6 +183,50 @@ header {
 .redes-sociales img:hover {
   transform: scale(1.2);
 }
+
+
+/** ----------- Menu-Hamburger------------  */
+
+.barras__menu {
+  width: 30px;
+  height: 30px;
+  z-index: 997;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  bottom: 1vh;
+  right: 2vw;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.barras__menu span {
+   display: block;
+   width: 100%;
+   height: 2px;
+   margin-top: 6px;
+   background-color: white;
+   transform-origin: 0px 100% ;
+   transition: all 300ms;
+  
+}
+
+.activelinea-1__barra-menu  {
+  transform: rotate(45deg) translate(-2px, 1px);
+}
+
+.activelinea-2__barra-menu  {
+  opacity: 0;
+  margin-left: -30px;
+}
+
+.activelinea-3__barra-menu  {
+  transform: rotate(-45deg)  translate(-4px, 2px);
+}
+
+
+/** Main */
 
 #frase-inspiradora {
   text-align: center;

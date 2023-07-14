@@ -2,12 +2,13 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Turismo Atacama">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Turismo Atacama" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css">
 
     <title>Agencia de Turismo</title>
 </head>
@@ -15,23 +16,23 @@
 <body>
     <div id="preloader"></div>
 
-    <div id="content" style="display: none;">
+    <main id="content" style="display: none">
 
         <div id="background-images">
-            <img src="imagenes/MoonValleyHD.jpeg" alt="Valle de la Luna, Atacama">
-            <img src="imagenes/Geyser_Tatio.jpeg" alt="Geyser del Tatio, Atacama">
-            <img src="imagenes/Piedras_Rojas.jpeg" alt="Piedras Rojas, Atacama">
-            <img src="imagenes/Piedras_Rojas_2.jpeg" alt="Piedras Rojas, Atacama">
-            <img src="imagenes/Noche_Atacama.jpeg" alt="Astronomia, Atacama">
+            <img src="imagenes/MoonValleyHD.jpeg" alt="Valle de la Luna, Atacama" />
+            <img src="imagenes/Geyser_Tatio.jpeg" alt="Geyser del Tatio, Atacama" />
+            <img src="imagenes/Piedras_Rojas.jpeg" alt="Piedras Rojas, Atacama" />
+            <img src="imagenes/Piedras_Rojas_2.jpeg" alt="Piedras Rojas, Atacama" />
+            <img src="imagenes/Noche_Atacama.jpeg" alt="Astronomia, Atacama" />
         </div>
 
         <header>
             <div id="logo">
-                Logo
+                <img src="imagenes/logo_min.png" alt="logo-home" width="60px">
             </div>
 
-            <nav id="menu">
-                <ul>
+            <nav id="menu" class="active">
+                <ul class="lista-menu">
                     <li>
                         <a id="enlace-atacama">ATACAMA</a>
                         <ul class="submenu">
@@ -51,20 +52,33 @@
                 </ul>
             </nav>
 
+
+
             <div class="redes-sociales">
                 <a href="https://www.facebook.com/profile.php?id=100063469303389" target="_blank">
-                    <img src="imagenes/facebook.png" alt="Facebook">
+                    <img src="imagenes/facebook.png" alt="Facebook" />
                 </a>
 
                 <a href="https://www.instagram.com/vendedor.de.suenos" target="_blank">
-                    <img src="imagenes/instagram.png" alt="Instagram">
+                    <img src="imagenes/instagram.png" alt="Instagram" />
                 </a>
 
                 <a href="https://api.whatsapp.com/send?phone=56998369065&text=Prueba página web" target="_blank">
-                    <img src="imagenes/whatsapp.png" alt="WhatsApp">
+                    <img src="imagenes/whatsapp.png" alt="WhatsApp" />
                 </a>
             </div>
+
+
+
         </header>
+
+        <div class="barras__menu inactive">
+            <span class="linea-1__barra-menu "></span>
+            <span class="linea-2__barra-menu "></span>
+            <span class="linea-3__barra-menu "></span>
+        </div>
+
+
 
         <div id="frase-inspiradora">
             <div class="frase-linea">
@@ -77,10 +91,14 @@
 
         <div id="recuadros">
             <div class="recuadro">
-                <p><strong><em>DÍA 1</em></strong></p>
+                <p>
+                    <strong><em>DÍA 1</em></strong>
+                </p>
                 <p><strong>VALLE DE LA LUNA 🌚</strong></p>
                 <p><em>15:10 hs en agencia</em></p>
-                <p><strong><em>Destinos:</em></strong></p>
+                <p>
+                    <strong><em>Destinos:</em></strong>
+                </p>
                 <ul>
                     <li><em>Tres Marías</em></li>
                     <li><em>Minas de sal</em></li>
@@ -90,28 +108,41 @@
 
                 <p><strong>Precio promo FAMILIAR: CLP $35.000</strong></p>
                 <p><strong>VALOR ENTRADA: CLP $11.000</strong></p>
-                <br>
+                <br />
                 <p><strong>TOUR ASTRONÓMICO 🌠</strong></p>
                 <p><em>Cosmovisión Andina y Atacameña</em></p>
-                <p><strong><em>Incluye:</em></strong></p>
+                <p>
+                    <strong><em>Incluye:</em></strong>
+                </p>
                 <ul>
-                    <li> <em>+ 2 fotos profesionales de alta calidad en modo digital</em></li>
+                    <li>
+                        <em>+ 2 fotos profesionales de alta calidad en modo digital</em>
+                    </li>
                 </ul>
-                <p><em>Debido al Calendario Lunar el horario es a confirmar (aprox 21:30 hs o 22:30 hs)</em></p>
+                <p>
+                    <em>Debido al Calendario Lunar el horario es a confirmar (aprox 21:30
+                        hs o 22:30 hs)</em>
+                </p>
 
                 <p><strong>Precio promo AÑO NUEVO: CLP $25.000</strong></p>
             </div>
 
             <div class="recuadro">
-                <p><strong><em>DÍA 2</em></strong></p>
+                <p>
+                    <strong><em>DÍA 2</em></strong>
+                </p>
             </div>
 
             <div class="recuadro">
-                <p><strong><em>DÍA 3</em></strong></p>
+                <p>
+                    <strong><em>DÍA 3</em></strong>
+                </p>
             </div>
         </div>
-    </div>
-    <script src="js/script.js"></script>
+    </main>
+
+
+    <script type="module" src="js/script.js"></script>
 </body>
 
 </html>
