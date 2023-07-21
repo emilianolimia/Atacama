@@ -9,7 +9,7 @@
 }
 
 
-@media screen and (width <= 720px) {
+@media screen and (width <= 800px) {
   nav a {
    font-size: .8rem;
   }
