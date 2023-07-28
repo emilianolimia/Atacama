@@ -1,4 +1,4 @@
-import { barrasMenu, line1, line2, line3, animateBarras } from './menu-hamburger.js'
+import "/js/menu-hamburger.js"
 
 window.addEventListener("load", function () {
 
@@ -10,16 +10,10 @@ window.addEventListener("load", function () {
 
     //* Listeners
 
-    barrasMenu.addEventListener('click', animateBarras)
 
 
 
 
-    let preloader = document.getElementById("preloader");
-    let content = document.getElementById("content");
-
-    preloader.style.display = "none"; // Ocultar el preloader
-    content.style.display = "block"; // Mostrar el contenido una vez que todas las imágenes estén cargadas
 
     let fraseInspiradora = document.getElementById("frase-inspiradora");
     let recuadros = document.getElementById("recuadros");

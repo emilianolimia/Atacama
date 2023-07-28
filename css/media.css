@@ -1,22 +1,31 @@
-@media screen and (width <= 620px) {
- 
-  .inactive {
-    display: block;
+@media screen and (width >= 1024px) {
+
+  .logo {
+    width: 20%;  
   }
-  .active {
+  .menu-btn{
     display: none;
   }
-}
-
-
-@media screen and (width <= 800px) {
-  nav a {
-   font-size: .8rem;
+  nav {
+    width: 60%;  
+    position: relative;
   }
-}
+  
+  .redes-sociales {
+    position: relative;
+    width: 20%;
+    display: flex;              
+    padding: 0px 20px;
+  }
+  
+  .redes-sociales img {
+    width: 18px; 
+    margin-left: 25px; 
+    transition: transform 0.1s ease-in-out;
+  }
+  
+  .redes-sociales img:hover {
+    transform: scale(1.2);
+  }
 
-/* @media screen and (width >= 1200px) {
-  nav a {
-    font-size: 1rem;
-   }
-} */
+}

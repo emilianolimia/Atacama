@@ -1,23 +1,23 @@
 
-const barrasMenu = document.querySelector('.barras__menu')
-const line1 = document.querySelector(".linea-1__barra-menu")
-const line2 = document.querySelector(".linea-2__barra-menu")
-const line3 = document.querySelector(".linea-3__barra-menu")
+/* ********** Menu ********** */
+((d) => {
+  const $btnMenu = d.querySelector(".menu-btn"),
+    $menu = d.querySelector("#menu");
 
+  $btnMenu.addEventListener("click", (e) => {
+    $btnMenu.firstElementChild.classList.toggle("none");
+    $btnMenu.lastElementChild.classList.toggle("none");
+    $menu.classList.toggle("is-active");
+  });
 
-const animateBarras = () => {
-  line1.classList.toggle("activelinea-1__barra-menu")
-  line2.classList.toggle("activelinea-2__barra-menu")
-  line3.classList.toggle("activelinea-3__barra-menu")
-  console.log("click");
+  d.addEventListener("click", (e) => {
+    if (!e.target.matches(".menu a")) return false;
 
-  //. para integrarlo con un menu por ej:
-  // container__menu.classList.toggle("menu__active");
-
-}
-
-export { barrasMenu, line1, line2, line3, animateBarras }
-
+    $btnMenu.firstElementChild.classList.remove("none");
+    $btnMenu.lastElementChild.classList.add("none");
+    $menu.classList.remove("is-active");
+  });
+})(document);
 
 
 

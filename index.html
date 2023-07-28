@@ -7,78 +7,102 @@
     <meta name="description" content="Turismo Atacama" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="shortcut icon" href="imagenes/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/media.css">
 
     <title>Agencia de Turismo</title>
 </head>
 
 <body>
-    <div id="preloader"></div>
 
-    <main id="content" style="display: none">
+    <div id="background-images">
+        <img src="imagenes/MoonValleyHD.jpeg" alt="Valle de la Luna, Atacama" />
+        <img src="imagenes/Geyser_Tatio.jpeg" alt="Geyser del Tatio, Atacama" />
+        <img src="imagenes/Piedras_Rojas.jpeg" alt="Piedras Rojas, Atacama" />
+        <img src="imagenes/Piedras_Rojas_2.jpeg" alt="Piedras Rojas, Atacama" />
+        <img src="imagenes/Noche_Atacama.jpeg" alt="Astronomia, Atacama" />
+    </div>
 
-        <div id="background-images">
-            <img src="imagenes/MoonValleyHD.jpeg" alt="Valle de la Luna, Atacama" />
-            <img src="imagenes/Geyser_Tatio.jpeg" alt="Geyser del Tatio, Atacama" />
-            <img src="imagenes/Piedras_Rojas.jpeg" alt="Piedras Rojas, Atacama" />
-            <img src="imagenes/Piedras_Rojas_2.jpeg" alt="Piedras Rojas, Atacama" />
-            <img src="imagenes/Noche_Atacama.jpeg" alt="Astronomia, Atacama" />
+    <header>
+
+        <div id="logo" class="logo">
+            <img src="imagenes/logo_min.png" alt="logo-home" width="60px">
         </div>
 
-        <header>
-            <div id="logo">
-                <img src="imagenes/logo_min.png" alt="logo-home" width="60px">
-            </div>
+        <nav id="menu">
+            <ul class="lista-menu">
+                <li>
+                    <a id="enlace-atacama">ATACAMA</a>
+                    <ul class="submenu">
+                        <li><a id="4-dias">PLAN 4 DÍAS</a></li>
+                        <li><a id="5-dias">PLAN 5 DÍAS</a></li>
+                        <li><a id="6-dias">PLAN 6 DÍAS</a></li>
+                    </ul>
+                </li>
 
-            <nav id="menu" class="active">
-                <ul class="lista-menu">
-                    <li>
-                        <a id="enlace-atacama">ATACAMA</a>
-                        <ul class="submenu">
-                            <li><a id="4-dias">PLAN 4 DÍAS</a></li>
-                            <li><a id="5-dias">PLAN 5 DÍAS</a></li>
-                            <li><a id="6-dias">PLAN 6 DÍAS</a></li>
-                        </ul>
-                    </li>
+                <li>
+                    <a id="enlace-uyuni">SALAR DE UYUNI</a>
+                </li>
 
-                    <li>
-                        <a id="enlace-uyuni">SALAR DE UYUNI</a>
-                    </li>
+                <li>
+                    <a id="enlace-privados">TOURS PRIVADOS</a>
+                </li>
+                <li>
+                    <div class="redes-sociales-menu ">
+                        <a href="https://www.facebook.com/profile.php?id=100063469303389" target="_blank">
+                            <img src="imagenes/facebook.png" alt="Facebook" />
+                        </a>
 
-                    <li>
-                        <a id="enlace-privados">TOURS PRIVADOS</a>
-                    </li>
-                </ul>
-            </nav>
+                        <a href="https://www.instagram.com/vendedor.de.suenos" target="_blank">
+                            <img src="imagenes/instagram.png" alt="Instagram" />
+                        </a>
 
-
-
-            <div class="redes-sociales">
-                <a href="https://www.facebook.com/profile.php?id=100063469303389" target="_blank">
-                    <img src="imagenes/facebook.png" alt="Facebook" />
-                </a>
-
-                <a href="https://www.instagram.com/vendedor.de.suenos" target="_blank">
-                    <img src="imagenes/instagram.png" alt="Instagram" />
-                </a>
-
-                <a href="https://api.whatsapp.com/send?phone=56998369065&text=Prueba página web" target="_blank">
-                    <img src="imagenes/whatsapp.png" alt="WhatsApp" />
-                </a>
-            </div>
+                        <a href="https://api.whatsapp.com/send?phone=56998369065&text=Prueba página web"
+                            target="_blank">
+                            <img src="imagenes/whatsapp.png" alt="WhatsApp" />
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
 
 
+        <div class="redes-sociales none">
+            <a href="https://www.facebook.com/profile.php?id=100063469303389" target="_blank">
+                <img src="imagenes/facebook.png" alt="Facebook" />
+            </a>
 
-        </header>
+            <a href="https://www.instagram.com/vendedor.de.suenos" target="_blank">
+                <img src="imagenes/instagram.png" alt="Instagram" />
+            </a>
 
-        <div class="barras__menu inactive">
-            <span class="linea-1__barra-menu "></span>
-            <span class="linea-2__barra-menu "></span>
-            <span class="linea-3__barra-menu "></span>
+            <a href="https://api.whatsapp.com/send?phone=56998369065&text=Prueba página web" target="_blank">
+                <img src="imagenes/whatsapp.png" alt="WhatsApp" />
+            </a>
         </div>
 
+        <button class="menu-btn">
 
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z" />
+            </svg>
+            <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                <path
+                    d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z" />
+            </svg>
+
+        </button>
+
+
+
+    </header>
+
+
+
+
+
+    <main id="content">
 
         <div id="frase-inspiradora">
             <div class="frase-linea">

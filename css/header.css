@@ -1,0 +1,128 @@
+/* ****** Header ******* */
+
+
+
+header {
+  position: relative;
+  left: 0;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;           
+  background-color: var(--background-header);   
+  z-index: 999;
+ 
+}
+
+.logo {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.menu-btn {
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+  
+}
+
+.menu-btn svg {
+  fill: var(--text-color);
+  width: 42px;
+  height: 42px;
+  padding-right: 10px;
+  
+}
+
+nav {
+  position: absolute;
+  top: 70px;
+  right: 0;
+  width: 50%;
+  height: 100vh;
+  background-color: var(--background-header);   
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+  z-index: 999;
+}
+
+nav.is-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.lista-menu {
+  text-align: right;
+  list-style: none;
+
+  
+}
+.redes-sociales-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-evenly;
+} */
+/* 
+nav ul li {
+  position: relative;
+  display: inline-block;
+  margin: 0 10px 0 0;
+} */
+/* 
+nav a {
+  display: block;
+  cursor: pointer;
+  font-size: 1rem
+  text-decoration: none; 
+} */
+
+/* .submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  width: 150px;
+  flex-direction: column; 
+  z-index: 999; 
+} */
+
+/* .submenu li a {
+  margin: 10px; 
+} */
+
+/* #menu li .submenu {
+  display: none; 
+} */
+
+/* .submenu li:first-child {
+  padding-top: 5px;
+} */
+
+/* #menu li:hover .submenu {
+  display: flex;
+} */
+
+
+
+
+
+
+
+
+
